@@ -179,6 +179,12 @@ en:
       moderator_codes:
         info: Allows room owners to optionally generate a moderator pin which allows other users to join directly as moderators.
         title: Moderator Access Code
+      webcam_for_moderator:
+        info: User's Webcams are visible to moderators only.
+      lock_webcam:
+        info: Do not allow viewers to use the webcam.
+      lock_mic:
+        info: Do not allow viewers to use the microphone.
       options:
         disabled: Disabled
         enabled: Always Enabled
