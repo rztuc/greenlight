@@ -29,8 +29,9 @@
 </div>
 
 <% if !current_user %>
-
-<%= render template: "sessions/ldap_signin" %>
-<% # <%= render "main/components/features" %>
-
+  <% if iconset_providers.include? :ldap %>
+    <%= render template: "sessions/ldap_signin" %>
+  <% else %>
+    <%= render template: "sessions/signin" %>
+  <% end %>
 <% end %>
